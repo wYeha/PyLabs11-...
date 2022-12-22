@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Обработка данных форм</title>
+</head>
+<body>
+    <h1>Форма</h1>
+
+    <form action="/cgi-bin/form.py">
+    Введите имя владельца <input type="text" name="in_name"><br />
+    Введите автомобиль<input type="text" name="in_car"><br />
+    Введите сторожа <input type="text" name="in_watchmen"><br />
+    Введите дату приезда <input type="text" name="in_arrivaLog"><br />
+    Введите дату уезда <input type="text" name="in_departureLog"><br />
+    <input type="submit">
+    </form>
+    <form action="/cgi-bin/FullDB.py">
+
+    Выыод всех значений бд: <input type="submit">
+    </form>
+    <form action="/cgi-bin/DeleteUser.py">
+        Удаление записи дата прибытия = 12.02.2024
+        <input type="submit">
+    </form>
+    <form action="/cgi-bin/update.py">
+        Обновление данных записи (заменить все названия автомобилей на Ford Mustang)
+        <input type="submit">
+    </form>
+</body>
+</html>
